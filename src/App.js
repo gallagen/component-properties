@@ -1,24 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ContactCard from "./components/ContactCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="contacts">
+      <ContactCard
+        contact={{
+        name:"Mr.Whiskerson",
+        imgUrl:"http://placekitten.com/300/200",
+        phone:"(212) 555-1234",
+        email:"mr.whiskaz@catnap.meow",
+        }}
+      />
+
+      <ContactCard
+        contact={{
+        name:"Fluffykins",
+        imgUrl:"http://placekitten.com/400/200",
+        phone:"(212) 555-2345",
+        email:"fluff@catnap.meow",
+        }}
+      />
+
+      <ContactCard
+        contact={{
+        name:"Destroyer",
+        imgUrl:"http://placekitten.com/400/300",
+        phone:"(212) 555-3456",
+        email:"ofworlds@catnap.meow",
+        }}
+      />
+
+      <ContactCard
+        contact={{
+        name:"Felix",
+        imgUrl:"http://placekitten.com/500/200",
+        phone:"(212) 555-4567",
+        email:"thecat@catnap.meow",
+        }}
+      />
     </div>
   );
 }
